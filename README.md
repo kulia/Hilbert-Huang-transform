@@ -14,3 +14,13 @@ Lets considering the the equation
 It is shown in the figure below
 
 <img src="fig/examples/raw.png" width="400">
+
+As shown in the example code, we can decompose the voltage waveform *v(t)* using
+
+```matlab
+[intrinsicModeFunctions, res] = emd(voltageWaveform);
+```
+
+This will decompose the voltagewaveform _v(t)_ down to two intrinsic mode functions and a residue so that
+
+_v(t)_ = _c<sub>i</sub>(t)_ + _r(t)_
