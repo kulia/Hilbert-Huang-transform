@@ -9,7 +9,5 @@ There are two essential functions to the hht code. It is the emd(·) and the hil
 
 Lets considering the the equation
 
-*v(t)* = sin(
-
-$\frac{n!}{k!(n-k)!}$
+*v(t)* = sin(*ω<sub>0</sub> t*) + 0.5 cos(*ω<sub>0</sub> t*<sup>2</sup>)
 
