@@ -11,5 +11,5 @@ Lets considering the the equation
 
 *v(t)* = sin(
 
-\frac{n!}{k!(n-k)!}
+$\frac{n!}{k!(n-k)!}$
 
