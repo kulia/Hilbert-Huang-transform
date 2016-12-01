@@ -15,6 +15,7 @@ It is shown in the figure below
 
 <img src="fig/examples/raw.png" width="400">
 
+### Empiricam Mode Decomposition
 As shown in the example code, we can decompose the voltage waveform *v(t)* using
 
 ```matlab
@@ -28,3 +29,8 @@ _v(t)_ = _c<sub>i</sub>(t)_ + _r(t)_
 where _c<sub>i</sub>(t)_ is IMF number _i_ and _r(t)_ is the residue. The IMFs and residue of the example waveform is shown in the figure below.
 
 <img src="fig/examples/imf.png" width="400">
+
+### Hilbert Spectrum
+The IMFs can be visualized using a Hilbert Spectrum. In the Hilbert Spectrum shows the instantanous frequency _f(t)_ the frequency components power (amplitude squared) as a function of time. The figure below show the Hilbert Spectrum of the example waveform _v(t)_.
+
+<img src="fig/examples/hs.png" width="400">
