@@ -14,3 +14,5 @@ Lets considering the the equation
 It is shown in the figure below
 
 ![alt text](fig/examples/raw.png)
+
+<img src="https://github.com/favicon.ico" width="200">
