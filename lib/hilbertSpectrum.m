@@ -12,6 +12,11 @@
 %
 %	method (string): 'h' or 'hilbert' for hilbert transform, whatever else for quadrature
 %
+% Copyright (C) Signal Analysis Lab AS - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibited
+% Proprietary and confidential
+% Written by Geir Kulia <geir.kulia@1991.ieee.org> from august 2015
+% 
 function hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, medianFilterLength) 
 	number_of_imf = size(intrinsicModeFunctions, 2);
 	length_of_imf = size(intrinsicModeFunctions, 1);

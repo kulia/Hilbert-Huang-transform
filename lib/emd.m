@@ -10,6 +10,11 @@
 %			
 %	residue (array): contains the error between the sum of all intrinsic mode functions and the original signal
 %
+% Copyright (C) Signal Analysis Lab AS - All Rights Reserved
+% Unauthorized copying of this file, via any medium is strictly prohibited
+% Proprietary and confidential
+% Written by Geir Kulia <geir.kulia@1991.ieee.org> from august 2015
+% 
 function [allIntrinsicModeFunctions, residue] = emd(signal)
 	if size(signal, 1) > size(signal, 2)
 		signal = signal';
