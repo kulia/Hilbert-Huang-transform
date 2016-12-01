@@ -39,3 +39,8 @@ hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, medianFilterLength)
 where the `medianFilterLength` is the length of a median filter used to remove artifacts. In this example, the filter length is 2 % of the sampling rate. The figure below shows the Hilbert Spectrum of the example waveform _v(t)_.
 
 <img src="fig/examples/hs.png" width="400">
+
+# TODO:
+- [x] Documentation
+- [x] FixedEMD
+- [ ] Ensure that residue output are correct
