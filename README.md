@@ -13,4 +13,4 @@ Lets considering the the equation
 
 It is shown in the figure below
 
-![alt text]("https://github.com/kulia/academic-Hilbert-Huang-transform/blob/master/fig/examples/raw.png")
+![alt text](fig/examples/raw.png)
