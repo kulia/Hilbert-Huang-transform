@@ -1,6 +1,11 @@
 # Academic Hilbert-Huang transform
 A light version of Signal Analysis Lab's Hilbert-Huang Transform software for Matlab.
 
+## Copyright notice
+Copyright (C) Signal Analysis Lab AS - All Rights Reserved
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential
+
 ## How to use this software?
 
 There are two essential functions to the hht code. It is the `emd(·)` and the `hilbertSpectrum(·)`. The `emd(·)` function decomposes a one-dimensional array down to the fewest monocomponents *c*<sub>*i*</sub>(*t*) and one monotonic function *r*(*t*) that is needed to describe it. 
