@@ -16,7 +16,7 @@ amplitude_0 = 1;
 omega_0 = 2 * pi * 50;
 
 amplitude_1 = 0.5;
-omega_1 = 2 * pi * 200;
+omega_1 = 2 * pi * 70;
 
 voltageWaveform = amplitude_0 * sin(omega_0 * time) ...
 				+ amplitude_1 * cos(omega_1 * time .^2);
@@ -86,8 +86,11 @@ figure(fig)
 clf(fig)
 box on
 hold on
-
-hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, 0.02 * samplingFrequency)
+hilbertSpectrum(intrinsicModeFunctions(:, 1), samplingFrequency, 0.02 * samplingFrequency)
+hilbertSpectrum(intrinsicModeFunctions(:, 2), samplingFrequency, 0.02 * samplingFrequency)
+h = legend('$$c_1(t)$$', '$$c_2(t)$$');
+set(h,'Interpreter','latex')
+set(h,'FontSize',fontSize)
 ax = gca;
 ax.FontSize = fontSize;
 saveas(fig, [path_to_figures 'hs'] , 'png')
