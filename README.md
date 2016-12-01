@@ -48,7 +48,7 @@ where the `medianFilterLength` is the length of a median filter used to remove a
 # Recomended literature
 - Huang et al.: __The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis__
 - Huang et al.: __On Instantaneous Frequency__
-- Boashash: __Estiating and Interpreting the Instantaneous Frequency of a Signal__
+- Boashash: __Estimating and Interpreting the Instantaneous Frequency of a Signal__
 - Wu et al.: __A study of the characteristics of white noise using the empirical mode decomposition method__
 - [The pyHHT tutorial](http://pyhht.readthedocs.io/en/latest/tutorials.html)
 
