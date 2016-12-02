@@ -23,7 +23,7 @@ It is shown in the figure below
 ### Empirical Mode Decomposition
 As shown in the example code, we can decompose the voltage waveform *v(t)* using
 
-```matlab
+```c
 [intrinsicModeFunctions, res] = emd(voltageWaveform);
 ```
 
@@ -37,7 +37,7 @@ where _c<sub>i</sub>(t)_ is IMF number _i_ and _r(t)_ is the residue. The IMFs a
 
 ### Hilbert Spectrum
 The IMFs can be visualized using a Hilbert Spectrum. In the Hilbert Spectrum shows the instantaneous frequency _f(t)_ the frequency components power (amplitude squared) as a function of time. To use the Hilbert Spectrum function write
-```Matlab
+```c
 medianFilterLength = 0.02 * samplingFrequency;
 hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, medianFilterLength)
 ```
