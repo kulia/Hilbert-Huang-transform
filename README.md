@@ -29,7 +29,7 @@ As shown in the example code, we can decompose the voltage waveform *v(t)* using
 
 This will decompose the voltage waveform _v(t)_ down to two intrinsic mode functions (IMFs) and a residue so that
 
-_v(t)_ = _c<sub>i</sub>(t)_ + _r(t)_
+_v(t)_ = Σ_c<sub>i</sub>(t)_ + _r(t)_
 
 where _c<sub>i</sub>(t)_ is IMF number _i_ and _r(t)_ is the residue. The IMFs and residue of the example waveform are shown in the figure below.
 
