@@ -6,11 +6,6 @@
 % Output:	
 %	alreadyIMF (boolean): 1 if IMF, 0 if not.
 %
-% Copyright (C) Signal Analysis Lab AS - All Rights Reserved
-% Unauthorized copying of this file, via any medium is strictly prohibited
-% Proprietary and confidential
-% Written by Geir Kulia <geir.kulia@1991.ieee.org> from august 2015
-% 
 function alreadyIMF = alreadyIntrinsicModeFunction(signal)
 	[yMax, xMax] = findpeaks(signal);
 
