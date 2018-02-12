@@ -18,12 +18,10 @@ function [allIntrinsicModeFunctions, residue] = emd(signal)
 	allIntrinsicModeFunctions = [];
 
 	if alreadyIntrinsicModeFunction(signal)
-		% disp('Signal is already an IMF');
 		allIntrinsicModeFunctions = signal';
 	elseif alreadyResidue(signal)
 		allIntrinsicModeFunctions = 0;
-	else
-		% disp('Signal is not IMF. Run EMD.');
+    else
 		signalLength = length(signal);
 
 		numberOfImf = numberOfImf(signalLength);
