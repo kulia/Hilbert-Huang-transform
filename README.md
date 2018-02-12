@@ -1,5 +1,5 @@
 # Hilbert-Huang transform in Matlab
-A light version of Signal Analysis Lab's Hilbert-Huang Transform software for Matlab. This version uses the Normalized Hilbert Transform to define and calculate the amplitude and phase.
+A light version of Signal Analysis Lab's Hilbert-Huang Transform software for Matlab. This version uses the Normalized Hilbert Transform to define and calculate the amplitude and phase. If you are interested in a fast, useable, pro version of HHT, please contact me at geir.kulia.1991@ieee.org.
 
 ## How to use this software?
 
