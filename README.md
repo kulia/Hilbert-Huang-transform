@@ -1,11 +1,6 @@
 # Academic Hilbert-Huang transform
 A light version of Signal Analysis Lab's Hilbert-Huang Transform software for Matlab. This version uses the Normalized Hilbert Transform to define and calculate the amplitude and phase.
 
-## Copyright notice
-Copyright (C) Signal Analysis Lab AS - All Rights Reserved.
-Unauthorized copying of this file, via any medium is strictly prohibited
-Proprietary and confidential
-
 ## How to use this software?
 
 There are two essential functions to the hht code. It is the `emd(·)` and the `hilbertSpectrum(·)`. The `emd(·)` function decomposes a one-dimensional array down to the fewest monocomponents *c*<sub>*i*</sub>(*t*) and one monotonic function *r*(*t*) that is needed to describe it. 
@@ -45,14 +40,11 @@ where the `medianFilterLength` is the length of a median filter used to remove a
 
 <img src="fig/examples/hs.png" width="400">
 
-# Recomended literature
-- Huang et al.: __The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis__
-- Huang et al.: __On Instantaneous Frequency__
-- Boashash: __Estimating and Interpreting the Instantaneous Frequency of a Signal__
-- Wu et al.: __A study of the characteristics of white noise using the empirical mode decomposition method__
-- [The pyHHT tutorial](http://pyhht.readthedocs.io/en/latest/tutorials.html)
-
 # TODO:
 - [x] Documentation
 - [x] FixedEMD
 - [ ] Ensure that residue output is correct
+
+## Copyright notice
+
+Copyright (C) 2015-2018 Geir Kulia - All Rights Reserved.
