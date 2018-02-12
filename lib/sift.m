@@ -13,9 +13,7 @@
 %
 % Output: 	intrinsicModeFunction (array): returns the first intrinsic mode function of the signal
 %
-% Copyright (C) Signal Analysis Lab AS - All Rights Reserved
-% Unauthorized copying of this file, via any medium is strictly prohibited
-% Proprietary and confidential
+% Copyright (C) Geir Kulia - All Rights Reserved
 % Written by Geir Kulia <geir.kulia@1991.ieee.org> from august 2015
 % 
 function intrinsicModeFunction = sift(signal)

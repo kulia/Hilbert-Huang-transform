@@ -6,17 +6,8 @@
 %
 %	samplingFrequency (int): the sampling rate of the signal. Used to convert time and frequency to real rather than discrete values
 %
-%	interpolationLength (float):
-%
 %	medianFilterLength (int):
 %
-%	method (string): 'h' or 'hilbert' for hilbert transform, whatever else for quadrature
-%
-% Copyright (C) Signal Analysis Lab AS - All Rights Reserved
-% Unauthorized copying of this file, via any medium is strictly prohibited
-% Proprietary and confidential
-% Written by Geir Kulia <geir.kulia@1991.ieee.org> from august 2015
-% 
 function hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, medianFilterLength) 
 	number_of_imf = size(intrinsicModeFunctions, 2);
 	length_of_imf = size(intrinsicModeFunctions, 1);
@@ -27,11 +18,6 @@ function hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, medianFilter
 	hold on
 	for i = 1:number_of_imf
 		[frequency, amplitude] = hilbertMethod(intrinsicModeFunctions(:, i), samplingFrequency);
-		% if strcmp(method, 'hilbert') | strcmp(method, 'h')
-		% 	[frequency, amplitude] = hilbertMethod(intrinsicModeFunctions(:, i), samplingFrequency);
-	 	% else
-	 	% 	[frequency, amplitude] = quadratureMethod(intrinsicModeFunctions(:, i), samplingFrequency, interpolationLength);
-	 	% end
 
 	   	amplitude = 20 * log10(abs(amplitude));
 	   	% amplitude = amplitude .^2;
@@ -40,9 +26,7 @@ function hilbertSpectrum(intrinsicModeFunctions, samplingFrequency, medianFilter
 	   	if medianFilterLength > 0
 	   		frequency = medfilt1(frequency, medianFilterLength);
 	   		amplitude = medfilt1(amplitude, medianFilterLength);
-	   	end
-	   	
-	   	length_of_frequency = length(frequency);
+        end
 
 		surface([time(:), time(:)], [frequency(:), frequency(:)], [amplitude(:), amplitude(:)], ...
 	    	[amplitude(:), amplitude(:)], 'EdgeColor','flat', 'FaceColor','none');
