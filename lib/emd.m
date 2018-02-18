@@ -3,19 +3,26 @@
 % Input:	
 %	signal (array): One dimentional time series
 %
-%	NumberOfImf (int): The number of intrinsic mode functions needed to represent a signal
+%   numberOfSifts (int): Number of Sifts. Optinal argument.
 %    
 % Output:	
 %	allIntrinsicModeFunctions (Matrix): a matrix containing all the intrinsic mode functions of signal. Each column contain one IMF
 %			
 %	residue (array): contains the error between the sum of all intrinsic mode functions and the original signal
 %
-function [allIntrinsicModeFunctions, residue] = emd(signal)
+function [allIntrinsicModeFunctions, residue] = emd(signal, varargin)
+
+    if length(varargin) == 1
+        numberOfSifts = varargin{1};
+    else
+        numberOfSifts = 10;
+    end
+
 	if size(signal, 1) > size(signal, 2)
 		signal = signal';
 	end
 
-	allIntrinsicModeFunctions = [];
+% 	allIntrinsicModeFunctions = [];
 
 	if alreadyIntrinsicModeFunction(signal)
 		allIntrinsicModeFunctions = signal';
@@ -30,7 +37,7 @@ function [allIntrinsicModeFunctions, residue] = emd(signal)
 
 		residue = signal;
 		for i = 1:numberOfImf
-			intrinsicModeFunction = sift(residue);
+			intrinsicModeFunction = sift(residue, numberOfSifts);
 			allIntrinsicModeFunctions(:, i) = intrinsicModeFunction(:);
 
 			residue = residue - intrinsicModeFunction;

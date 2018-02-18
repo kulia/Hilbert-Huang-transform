@@ -16,15 +16,11 @@
 % Copyright (C) Geir Kulia - All Rights Reserved
 % Written by Geir Kulia <geir.kulia@1991.ieee.org> from august 2015
 % 
-function intrinsicModeFunction = sift(signal)
+function intrinsicModeFunction = sift(signal, numberOfSifts)
 	signalLength = length(signal);
 
 	currentModeFunction = zeros(1, signalLength);
 	previousModeFunction = signal;
-
-	% numberOfSifts = 10;
-	numberOfSifts = 50;
-	% numberOfSifts = 5;
 
 	% error = 1e-4;
 	error = 1e-3;  % 1e-3 showed great results!
