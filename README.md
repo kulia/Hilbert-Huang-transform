@@ -41,8 +41,7 @@ where the `medianFilterLength` is the length of a median filter used to remove a
 <img src="fig/examples/hs.png" width="400">
 
 # TODO:
-- [x] Documentation
-- [x] FixedEMD
+- [ ] Argument for fixed EMD
 - [ ] Ensure that residue output is correct
 
 ## License
