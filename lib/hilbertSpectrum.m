@@ -45,5 +45,5 @@ function setColorMapAndLabels()
 	xlabel('Time [s]', 'Interpreter', 'Latex');
 	ylabel('Frequency [Hz]', 'Interpreter', 'Latex');
 
-	% Uncomment next line to set bluebackground color
+	% Uncomment next line to set blue background color
 	% set(gca,'Color',[0 0 0.5156]);
